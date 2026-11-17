@@ -44,7 +44,7 @@ Progress, selected game, collapsed-section preferences, and generated thumbnail 
 - **DaiAkuji:** Built-in character database and portraits.
 - **Custom Game:** Load a user-provided character database.
 
-This build is dedicated to DaiAkuji and Custom Game. For the built-in DaiBanchou, DaiTeikoku, and Sengoku Rance databases, use the multi-game build.
+DaiBanchou, DaiTeikoku, and Sengoku Rance databases are being worked on and might be added in 1.0.
 
 ## Getting started
 
