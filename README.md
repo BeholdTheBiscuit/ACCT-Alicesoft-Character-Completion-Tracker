@@ -1,4 +1,4 @@
-ACCT — AliceSoft Character Completion Tracker
+# ACCT — AliceSoft Character Completion Tracker
 
 ACCT is a portable Windows Forms application for tracking character recruitment and character-clear progress in AliceSoft games. It keeps character data in JSON and saves player progress separately in `ProgressSaveFile` beside the application.
 
@@ -7,6 +7,7 @@ Character notes can point out missable events, betrayal conditions, or character
 ## Features
 
 - **Three-column character gallery** with search, completion-status filters, and a multi-select affiliation filter.
+- **Sorting and favorites.** Choose affiliation or alphabetical order; favorites stay at the top independently of the selected status and affiliation filters.
 - **Character profiles** with recruitment information, character-clear steps, notes, event and CG lists, custom fields, and images.
 - **Separate recruitment and character-clear checklists.** Informational notes and sub-bullets can be shown without adding progress checkboxes.
 - **Keyboard navigation** through the gallery with the arrow keys when the search field is not focused.
@@ -31,7 +32,7 @@ My Custom Game/
 
 Image paths are relative to the folder containing `characters.json`. A thumbnail with the same filename in `thumbnails/` is used automatically; `ThumbnailPath` can specify another path. See [CUSTOM_GAMES.md](CUSTOM_GAMES.md) and [THUMBNAILS.md](THUMBNAILS.md) for the JSON format and image options.
 
-The optional `CustomFields` list adds game-specific display-only labels and values. Section and field labels can be customized in `ui.json`. ACCT does not include an editor for `ui.json`.
+The optional `CustomFields` list adds game-specific display-only labels and values. Section and field labels can be customized in `ui.json`. ACCT does not include an editor for `ui.json`. Not yet at least.
 
 A separate prototype for editing character records is in the repository at `tools/CharacterDatabaseEditor/`; it does not edit progress saves or `ui.json`.
 
@@ -41,16 +42,18 @@ Progress, selected game, collapsed-section preferences, and generated thumbnail 
 
 ## Included games
 
-- **DaiAkuji:** Built-in character database and portraits.
-- **Custom Game:** Load a user-provided character database.
+This build includes these game databases under `GameData/`:
 
-DaiBanchou, DaiTeikoku, and Sengoku Rance databases are being worked on and might be added in 1.0.
+- **DaiAkuji**
+- **DaiBanchou**
+- **DaiTeikoku**
+- **Sengoku Rance**
+- **Custom Game** for user-provided databases
+
+Choose a built-in title from the **Game** menu. The databases are works in progress and can differ in completeness; consult each game folder’s `SOURCE.md` for sourcing and known gaps. Info is taken from the Alicesoft Wiki.
 
 ## Getting started
 
 1. Run `ACCT.exe` on Windows.
 2. DaiAkuji opens by default.
-3. Use the **Game** menu to load a custom database, or select a character in the gallery to view and update its information.
-
-
-
+3. Choose a built-in game from **Game**, or choose **Game → Custom Game...** to load another database.
