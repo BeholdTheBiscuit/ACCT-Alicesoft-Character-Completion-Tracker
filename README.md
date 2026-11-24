@@ -57,3 +57,8 @@ Choose a built-in title from the **Game** menu. The databases are works in progr
 1. Run `ACCT.exe` on Windows.
 2. DaiAkuji opens by default.
 3. Choose a built-in game from **Game**, or choose **Game → Custom Game...** to load another database.
+
+## Screenshot
+![description](https://i.ibb.co/JRxB3vV3/Cattura2.jpg)
+> [!NOTE]
+> This project is a work in progress. Features, UI and screenshots are subject to change.
